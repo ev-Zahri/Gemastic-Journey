@@ -1,5 +1,5 @@
 # Gemastic-Journey
-Repository untuk kode program latihan gemastik.
+Repository untuk kode program latihan gemastik divisi pemrograman.
 
 # Ketentuan Upload
 1. Cantumkan link soal didalam file.
