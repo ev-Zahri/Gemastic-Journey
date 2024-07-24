@@ -1,3 +1,4 @@
+// https://www.codewars.com/kata/5ca24526b534ce0018a137b5/train/cpp
 #include <iostream>
 #include <string>
 using namespace std;
