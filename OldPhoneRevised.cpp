@@ -24,19 +24,19 @@ string oldPhone(const string& message) {
         {'P', "#7"}, {'Q', "#77"}, {'R', "#777"}, {'S', "#7777"},
         {'T', "#8"}, {'U', "#88"}, {'V', "#888"},
         {'W', "#9"}, {'X', "#99"}, {'Y', "#999"}, {'Z', "#9999"},
-        {' ', "0"}, {'1', "1-"}, {'2', "2-"}, {'3', "3-"},
-        {'4', "4-"}, {'5', "5-"}, {'6', "6-"}, {'7', "7-"},
-        {'8', "8-"}, {'9', "9-"}, {'*', "*-"}, {'#', "#-"},
-        {'.', "1"}, {',', "11"}, {'?', "111"}, {'!', "1111"},
-        {'-', "-"}
+        {' ', "0"}, {'1', "1"}, {'2', "2"}, {'3', "3"},
+        {'4', "4"}, {'5', "5"}, {'6', "6"}, {'7', "7"},
+        {'8', "8"}, {'9', "9"}, {'\'', "*"}, {'-', "**"},
+        {'+', "***"}, {'=', "****"}, {'#', "#"},
+        {'.', "1"}, {',', "11"}, {'?', "111"}, {'!', "1111"}
     };
     
     string result = "";
     bool isUpperCase = false;  // Track the current case mode
 
     for (char c : message) {
-        if (isupper(c)) isUpperCase = true;
-        if (isalpha(c)) {
+        if (isupper(c)) isUpperCase = true; // Mengecek karakter huruf besar atau tidak
+        if (isalpha(c)) { // Mengecek karakter huruf alphabet atau bukan
             bool shouldBeUpperCase = isupper(c);
             if (shouldBeUpperCase != isUpperCase) {
                 result += "#";
