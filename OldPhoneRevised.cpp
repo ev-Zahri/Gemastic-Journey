@@ -35,8 +35,8 @@ string oldPhone(const string& message) {
     bool isUpperCase = false;  // Track the current case mode
 
     for (char c : message) {
-        if (isupper(c)) isUpperCase = true; // Mengecek karakter huruf besar atau tidak
-        if (isalpha(c)) { // Mengecek karakter huruf alphabet atau bukan
+        if (isupper(c)) isUpperCase = true;
+        if (isalpha(c)) {
             bool shouldBeUpperCase = isupper(c);
             if (shouldBeUpperCase != isUpperCase) {
                 result += "#";
