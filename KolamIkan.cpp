@@ -41,6 +41,10 @@ int main(){
             bKolam2 = h[0][i];
             break;
         }
+        if (bKolam2 == h[0][i]){
+            bKolam2 = h[0][i];
+            break;
+        }
     }
     result = bKolam1 * k + bKolam2 * (n - index);
     cout << result;
